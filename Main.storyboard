@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ev5-nz-Vih">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aracne-Condensed-regular.otf">
+            <string>Aracne-CondensedRegular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Lador First View Controller-->
+        <scene sceneID="E0N-82-9xX">
+            <objects>
+                <viewController storyboardIdentifier="LadorFirstViewController" id="iX7-zN-7hy" customClass="LadorFirstViewController" customModule="Lador" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5Q-Ys-T5t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_categories" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-xl-2MF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menyu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXs-6K-Uhr">
+                                <rect key="frame" x="280" y="25" width="40" height="77"/>
+                                <fontDescription key="fontDescription" name="Aracne-CondensedRegular" family="Aracne" pointSize="66"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DLE-gE-ch9">
+                                <rect key="frame" x="0.0" y="115" width="600" height="552"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Mai-u7-F4d" customClass="LadorCategoryTableViewCell" customModule="Lador">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mai-u7-F4d" id="tv4-HH-TPs">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DGq-oQ-bLS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mbN-mY-frG">
+                                                        <size key="itemSize" width="50" height="50"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="icq-lc-1Yc" customClass="LadorCategoryCollectionViewCell" customModule="Lador">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </view>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="DGq-oQ-bLS" firstAttribute="leading" secondItem="tv4-HH-TPs" secondAttribute="leading" id="IwP-Ev-uPM"/>
+                                                <constraint firstAttribute="trailing" secondItem="DGq-oQ-bLS" secondAttribute="trailing" id="JQU-uY-dGi"/>
+                                                <constraint firstItem="DGq-oQ-bLS" firstAttribute="top" secondItem="tv4-HH-TPs" secondAttribute="top" id="LWA-fS-Dh8"/>
+                                                <constraint firstAttribute="bottom" secondItem="DGq-oQ-bLS" secondAttribute="bottom" id="j7j-5K-Y8d"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="collectionView" destination="DGq-oQ-bLS" id="dQy-tH-2hL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Gif-Xj-MZt" firstAttribute="bottom" secondItem="DLE-gE-ch9" secondAttribute="bottom" id="9xs-Hk-T6B"/>
+                            <constraint firstItem="BK0-xl-2MF" firstAttribute="top" secondItem="A5Q-Ys-T5t" secondAttribute="top" id="BVz-vX-Sie"/>
+                            <constraint firstItem="Gif-Xj-MZt" firstAttribute="trailing" secondItem="DLE-gE-ch9" secondAttribute="trailing" id="F6D-D6-vEv"/>
+                            <constraint firstItem="DLE-gE-ch9" firstAttribute="top" secondItem="Gif-Xj-MZt" secondAttribute="top" constant="95" id="Fcq-JQ-Gzu"/>
+                            <constraint firstItem="Gif-Xj-MZt" firstAttribute="trailing" secondItem="wXs-6K-Uhr" secondAttribute="trailing" constant="280" id="Gqy-7X-fWi"/>
+                            <constraint firstItem="DLE-gE-ch9" firstAttribute="leading" secondItem="Gif-Xj-MZt" secondAttribute="leading" id="KbT-Xb-FA0"/>
+                            <constraint firstItem="Gif-Xj-MZt" firstAttribute="trailing" secondItem="BK0-xl-2MF" secondAttribute="trailing" id="jS5-ZI-cd0"/>
+                            <constraint firstItem="wXs-6K-Uhr" firstAttribute="top" secondItem="Gif-Xj-MZt" secondAttribute="top" constant="5" id="qQK-Mm-HzF"/>
+                            <constraint firstItem="wXs-6K-Uhr" firstAttribute="leading" secondItem="Gif-Xj-MZt" secondAttribute="leading" constant="280" id="soe-bp-6QV"/>
+                            <constraint firstItem="BK0-xl-2MF" firstAttribute="leading" secondItem="A5Q-Ys-T5t" secondAttribute="leading" id="t5U-Eb-6hG"/>
+                            <constraint firstItem="Gif-Xj-MZt" firstAttribute="bottom" secondItem="BK0-xl-2MF" secondAttribute="bottom" id="zk9-bJ-dml"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gif-Xj-MZt"/>
+                    </view>
+                    <size key="freeformSize" width="600" height="667"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="BK0-xl-2MF" id="yVk-zt-Aw2"/>
+                        <outlet property="menuLabel" destination="wXs-6K-Uhr" id="zNk-aJ-kqF"/>
+                        <outlet property="tableView" destination="DLE-gE-ch9" id="yBZ-F6-54J"/>
+                        <segue destination="ecL-Go-CSZ" kind="show" id="Sva-R3-iwc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiu-QY-zuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187" y="-676"/>
+        </scene>
+        <!--Lador Main Page View Controller-->
+        <scene sceneID="Oca-kk-XW9">
+            <objects>
+                <viewController id="Ev5-nz-Vih" customClass="LadorMainPageViewController" customModule="Lador" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g07-xM-rPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-ex-6k8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eXg-ex-6k8" firstAttribute="leading" secondItem="6o5-WQ-YgP" secondAttribute="leading" id="2B5-jH-bbn"/>
+                            <constraint firstItem="eXg-ex-6k8" firstAttribute="top" secondItem="g07-xM-rPZ" secondAttribute="top" id="Aei-fw-CoG"/>
+                            <constraint firstItem="6o5-WQ-YgP" firstAttribute="bottom" secondItem="eXg-ex-6k8" secondAttribute="bottom" id="fJ3-eI-e6U"/>
+                            <constraint firstItem="6o5-WQ-YgP" firstAttribute="trailing" secondItem="eXg-ex-6k8" secondAttribute="trailing" id="pxr-Id-EjD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6o5-WQ-YgP"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="eXg-ex-6k8" id="xab-Kf-CgS"/>
+                        <segue destination="iX7-zN-7hy" kind="show" identifier="segueToMenu" id="EHM-lQ-MRU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVj-JK-2P5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1263" y="-639"/>
+        </scene>
+        <!--Product List View Controller-->
+        <scene sceneID="FgS-h0-75K">
+            <objects>
+                <viewController storyboardIdentifier="ProductListViewController" id="ecL-Go-CSZ" customClass="ProductListViewController" customModule="Lador" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="siS-EV-VGb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-bT-WdI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gd5-bT-WdI" firstAttribute="top" secondItem="siS-EV-VGb" secondAttribute="top" id="Dqv-FC-oLP"/>
+                            <constraint firstItem="Gd5-bT-WdI" firstAttribute="leading" secondItem="xHW-LU-eDO" secondAttribute="leading" id="K2N-qI-glU"/>
+                            <constraint firstItem="xHW-LU-eDO" firstAttribute="bottom" secondItem="Gd5-bT-WdI" secondAttribute="bottom" id="Tp6-7i-iNW"/>
+                            <constraint firstItem="xHW-LU-eDO" firstAttribute="trailing" secondItem="Gd5-bT-WdI" secondAttribute="trailing" id="Y7a-4g-W83"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xHW-LU-eDO"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="Gd5-bT-WdI" id="z2Z-62-TlP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORJ-Zz-NoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487" y="-351"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="768" height="1024"/>
+        <image name="menu_categories" width="2960" height="3456"/>
+    </resources>
+</document>
